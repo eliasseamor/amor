@@ -1,0 +1,48 @@
+<style>
+  .foto,
+  .foto2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  .btn {
+    border-radius: 25px;
+    background-color: palegreen;
+
+    height: 200px;
+    cursor: pointer;
+    border: 3px solid black;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .btn .foto2 {
+    display: none;
+  }
+  .btn:hover {
+    background-color: green;
+  }
+  .btn:hover .foto2 {
+    display: block;
+  }
+
+  .btn:hover .foto {
+    display: none;
+  }
+</style>
+
+<div class="btn" onClick="alert('el amor es muy bueno')">
+  <img
+    class="foto"
+    src="https://www.pngfind.com/pngs/m/640-6404904_the-ancient-oak-druid-tree-jrr-tolkien-calendar.png"
+    alt=""
+  />
+  <img
+    class="foto2"
+    src="https://th.bing.com/th/id/OIP.kp8m0U80yyZoM5zdcwscegHaFj?w=260&h=195&c=7&r=0&o=5&pid=1.7"
+    alt=""
+  />
+  <p>Texto del botón</p>
+</div>
